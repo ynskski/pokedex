@@ -158,3 +158,13 @@ struct Pokemon: Hashable, Decodable, Identifiable {
         }
     }
 }
+
+extension Pokemon {
+    var image: Image {
+        return ImageStore.shared.image(name: String(format: "%03d", self.id))
+    }
+    
+    var spriteImage: Image {
+        return ImageStore.shared.image(name: String(format: "%03dMS", self.id))
+    }
+}
