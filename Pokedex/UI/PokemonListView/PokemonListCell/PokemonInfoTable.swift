@@ -19,7 +19,13 @@ struct PokemonInfoTable: View {
             
             HStack {
                 ForEach(pokemon.type, id: \.self) { type in
-                    Text(type.title)
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .foregroundColor(type.color)
+                        
+                        Text(type.title)
+                            .foregroundColor(.white)
+                    }
                 }
             }
         }
