@@ -1642,7 +1642,7 @@
 		0226DEA023B64B7300E30A6F /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0226DE9F23B64B7300E30A6F /* Pokemon.swift */; };
 		0247B40223B6506B0006BDB0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0247B40123B6506B0006BDB0 /* Data.swift */; };
 		02756A5323B7544900C1238E /* PokemonInfoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02756A5223B7544900C1238E /* PokemonInfoTable.swift */; };
-		02756A5523B78EDF00C1238E /* selectedCellBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02756A5423B78EDF00C1238E /* selectedCellBGView.swift */; };
+		02756A5523B78EDF00C1238E /* SelectedCellBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02756A5423B78EDF00C1238E /* SelectedCellBGView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3304,7 +3304,7 @@
 		0226DE9F23B64B7300E30A6F /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		0247B40123B6506B0006BDB0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		02756A5223B7544900C1238E /* PokemonInfoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoTable.swift; sourceTree = "<group>"; };
-		02756A5423B78EDF00C1238E /* selectedCellBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedCellBGView.swift; sourceTree = "<group>"; };
+		02756A5423B78EDF00C1238E /* SelectedCellBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCellBGView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4999,7 +4999,7 @@
 				02121F5E23B7492D0024931C /* PokemonListNormalCell.swift */,
 				02121F6023B749A80024931C /* PokemonListSelectedCell.swift */,
 				02756A5223B7544900C1238E /* PokemonInfoTable.swift */,
-				02756A5423B78EDF00C1238E /* selectedCellBGView.swift */,
+				02756A5423B78EDF00C1238E /* SelectedCellBGView.swift */,
 			);
 			path = PokemonListCell;
 			sourceTree = "<group>";
@@ -6844,7 +6844,7 @@
 				0247B40223B6506B0006BDB0 /* Data.swift in Sources */,
 				0226DEA023B64B7300E30A6F /* Pokemon.swift in Sources */,
 				02121F6123B749A80024931C /* PokemonListSelectedCell.swift in Sources */,
-				02756A5523B78EDF00C1238E /* selectedCellBGView.swift in Sources */,
+				02756A5523B78EDF00C1238E /* SelectedCellBGView.swift in Sources */,
 				0226DE7223B64A4700E30A6F /* SceneDelegate.swift in Sources */,
 				021218FB23B6566F0024931C /* PokemonListView.swift in Sources */,
 				0226DE7423B64A4700E30A6F /* ContentView.swift in Sources */,

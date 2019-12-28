@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct selectedCellBGView: View {
+struct SelectedCellBGView: View {
     var body: some View {
         GeometryReader { geometry in
             Path { path in
