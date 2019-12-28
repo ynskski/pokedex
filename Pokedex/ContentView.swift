@@ -10,20 +10,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Color(.orange)
-                .edgesIgnoringSafeArea(.all)
-            
-            NavigationView {
-                PokemonListView()
-                    .navigationBarTitle(Text("ポケモン図鑑"), displayMode: .inline)
-                    .background(NavigationConfigurator { nc in
-                        nc.navigationBar.barTintColor = UIColor(red: 221/255, green: 91/255, blue: 68/255, alpha: 1.0)
-                        nc.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
-                    })
-            }
-        .navigationViewStyle(StackNavigationViewStyle())
+        NavigationView {
+            PokemonListView()
+                .navigationBarTitle(Text("ポケモン図鑑"), displayMode: .inline)
+                .background(NavigationConfigurator { nc in
+                    nc.navigationBar.barTintColor = UIColor(red: 221/255, green: 91/255, blue: 68/255, alpha: 1.0)
+                    nc.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+                })
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
