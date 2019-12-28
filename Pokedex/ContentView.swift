@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        PokemonListView()
+        NavigationView {
+            PokemonListView()
+                .navigationBarTitle(Text("ポケモン図鑑"), displayMode: .large)
+        }
     }
 }
 
