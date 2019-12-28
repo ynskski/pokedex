@@ -10,9 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
-            PokemonListView()
-                .navigationBarTitle(Text("ポケモン図鑑"), displayMode: .large)
+        ZStack {
+            Color(.orange)
+                .edgesIgnoringSafeArea(.all)
+            
+            NavigationView {
+                PokemonListView()
+                    .navigationBarTitle(Text("ポケモン図鑑"), displayMode: .large)
+            }
         }
     }
 }

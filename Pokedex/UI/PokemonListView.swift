@@ -9,11 +9,20 @@
 import SwiftUI
 
 struct PokemonListView: View {
+    @State private var selectedPokemonId: Int? = nil
+    
     var body: some View {
         ScrollView {
             VStack {
                 ForEach(pokemonData) { pokemon in
-                    PokemonListCell(pokemon: pokemon)
+                    PokemonListCell(pokemon: pokemon, selectedPokemonId: self.$selectedPokemonId)
+                        .onTapGesture {
+                            if self.selectedPokemonId == nil || self.selectedPokemonId != pokemon.id{
+                                self.selectedPokemonId = pokemon.id
+                            } else {
+                                self.selectedPokemonId = nil
+                            }
+                    }
                 }
             }
         }
