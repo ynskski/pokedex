@@ -11,9 +11,11 @@ import SwiftUI
 struct PokemonListView: View {
     var body: some View {
         NavigationView {
-            List {
-                ForEach(pokemonData) { pokemon in
-                    PokemonListCell(pokemon: pokemon)
+            ScrollView {
+                VStack {
+                    ForEach(pokemonData) { pokemon in
+                        PokemonListCell(pokemon: pokemon)
+                    }
                 }
             }
             .navigationBarTitle(Text("ポケモン図鑑"), displayMode: .large)

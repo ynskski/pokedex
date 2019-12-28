@@ -13,16 +13,19 @@ struct PokemonListCell: View {
     
     var body: some View {
         HStack {
-            pokemon.image
+            pokemon.spriteImage
                 .resizable()
-                .frame(width: 100, height: 100)
+                .frame(width: 50, height: 50)
             
-            VStack(alignment: .leading) {
-                Text(String(format: "No. %03d", pokemon.id))
-                
-                Text(pokemon.name)
-                    .font(.headline)
-            }
+            
+            Text(String(format: "No. %03d", pokemon.id))
+            
+            Text(pokemon.name)
+                .font(.headline)
+                .padding([.leading])
+            
+            Spacer()
         }
+        .padding([.leading, .trailing, .top])
     }
 }
